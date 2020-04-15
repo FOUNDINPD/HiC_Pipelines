@@ -18,5 +18,5 @@ Push fastQC reports .pdf to folder in this github
 
 # HiC sequencing data pipeline
 
-
-
+See `QC_and_Preprocessing` for scripts used to combine fastq lane files and run [fastqc](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/) on samples  
+See `Juicer` for scripts used to run the [Juicer](https://github.com/aidenlab/juicer) pipeline and do various analyses 
