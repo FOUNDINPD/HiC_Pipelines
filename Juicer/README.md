@@ -27,10 +27,27 @@ listed in the general order they were ran. Everything coded to run on biowulf.
 
 ### 4) `HIC_overlap_between_samples.ipynb`
 - uses functions from `overlapBedpeAndBed.py` to check for overlap between samples using bedtools.
+- output matrix files show loop count or percent overlap with respect to the column sample.
+##### Output:
+    - `sample_overlap_count.csv`
+    - `sample_overlap_percent.csv`
 
 ### 5) `HIC_overlap_PsychENCODE.ipynb`
 - uses functions from `overlapBedpeAndBed.py` to check for PsychENCODE loop overlap with samples
 - includes code to process the PsychENCODE data for comparison (map their hg19 positions to hg38)
+##### Output:
+    - `psychencode_loop_overlap.csv`
 
+### 6) `Juicer_Tools_Compare_Lists.ipynb`
+- uses the [Compare](https://github.com/aidenlab/Juicer/wiki/Compare-Lists) tool from juicer to compare the sample bedpes. 
+- Different from using bedtools for overlap, because this uses a radius threshold to check for euclidean distance between loops to check for overlap.
+- output matrix files show loop count or percent overlap with respect to the column sample.
+##### Output:
+    - `compare_lists_25000`
+    - `compare_lists_default`
 
-
+### 7) `Juicer_Tools_Huccups_Diff.ipynb`
+- uses the [hiccupsdiff](https://github.com/aidenlab/Juicer/wiki/HiCCUPSDiff) tool from juicer to look for differential loops between samples. 
+- This reruns the Hiccups algorithm on the samples and looks for enrichment in annotated loop regions. Loops are only counted as being differential to one sample if the loop has no enrichment at all in the other sample. 
+##### Output:
+    - `hiccups_diff_progression.csv`
