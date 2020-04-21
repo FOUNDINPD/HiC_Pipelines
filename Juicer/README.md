@@ -51,3 +51,6 @@ listed in the general order they were ran. Everything coded to run on biowulf.
 - This reruns the Hiccups algorithm on the samples and looks for enrichment in annotated loop regions. Loops are only counted as being differential to one sample if the loop has no enrichment at all in the other sample. 
 ##### Output:
     - `hiccups_diff_progression.csv`
+    
+### 8) `HIC_Heatmaps.ipynb`
+- uses [hicExporer](https://hicexplorer.readthedocs.io/en/latest/index.html) to convert juicer's .hic files to .cool files and then generate heatmaps per chromosome.
