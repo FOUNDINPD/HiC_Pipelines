@@ -54,3 +54,6 @@ listed in the general order they were ran. Everything coded to run on biowulf.
     
 ### 8) `HIC_Heatmaps.ipynb`
 - uses [hicExporer](https://hicexplorer.readthedocs.io/en/latest/index.html) to convert juicer's .hic files to .cool files and then generate heatmaps per chromosome.
+
+### 9) `Juicer_Call_Variants.ipynb`
+- uses plink to call variants in sample bam files subsetted by loop regions to check for sample swaps.
